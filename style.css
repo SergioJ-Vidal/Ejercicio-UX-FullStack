@@ -6,6 +6,8 @@
   --color5: #a5a6f6;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Bebas+Neue&display=swap');
+
 html {
   display: flex;
   justify-content: center;
