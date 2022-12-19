@@ -3,8 +3,7 @@
   --color2: #cccdf9;
   --color3: #f2f2f2;
   --color4: #bdbdbd;
-  --color5: #CCCDF9;
-
+  --color5: #cccdf9;
 }
 
 html {
@@ -23,7 +22,6 @@ body {
 }
 
 form {
-  background-color: var(--color3);
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -36,18 +34,33 @@ form {
   font-weight: 700;
   font-size: 24px;
   line-height: 25px;
+  padding-top: 10px;
 }
 
 header {
   background-color: var(--color1);
   width: 375px;
   height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 }
 .top-header {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 .bottom-header {
-  background-color: green;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 14px;
+  height: 12px;
 }
 
 .logo {
@@ -58,8 +71,8 @@ input {
   width: 343px;
   height: 56px;
   border-radius: 8px;
-  border: 1px solid #BDBDBD;
-  background-color: #F2F2F2;
+  border: 1px solid #bdbdbd;
+  background-color: #f2f2f2;
 }
 
 #agreement {
@@ -71,14 +84,13 @@ input::-webkit-input-placeholder {
   position: relative;
 }
 
-input:focus::-webkit-input-placeholder{
-position: absolute;
+input:focus::-webkit-input-placeholder {
+  position: absolute;
 }
 
 #country-label {
-
 }
 
 #submit {
-    background-color: var(--color5);
+  background-color: var(--color5);
 }
