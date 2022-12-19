@@ -163,14 +163,18 @@ input:focus::-webkit-input-placeholder {
   z-index: -1;
 }
 
-.agreement {
+.confirm-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.agreement label {
+.confirm-container label {
   font-size: 12px;
   margin-left: 5px;
   font-weight: 700;
 }
+
+.confirm-container input {
+    height: 10px;
+  }

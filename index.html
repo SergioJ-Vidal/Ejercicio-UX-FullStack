@@ -43,23 +43,44 @@
             </div>
 
             <input type="email" name="email" placeholder="Email" pattern=^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$
-                title='Email doesn´t have a correct format' required>
+                title='Introduce una dirección de correo electrónico valida para tu cuenta de CareSwitch' required>
 
-            <input type="password" id="password" placeholder="Contraseña" required>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <span class="locker">&#128272;</span>
+            </div>
 
-            <input type="password" id="password2" placeholder="Confirmar contraseña" required>
+            <div id='validation-password' class="password-strength-container none">
 
-            <input type="text" id="prefix" value="+34 (España)" placeholder="(España)" disabled>
+                <p>Your password may contain:</p>
+                <span>&#10003; 8 or more characters</span>
+                <span>&#10003; Upper case and lower case </span>
+                <span>&#10003; At least, one number</span>
 
-            <input type="phone" id="phone" placeholder="Número de teléfono" required>
+                <p>Security:</p>
+                <div class="bar-progress">
+                    <div class="content-bar-progress"></div>
+                </div>
 
-            <div class="agreement" required>
-                <input type="checkbox" id="agreement" name="agreement" value="agreed">
-                <label for="agreement">Acepto la política de privacidad y publicidad <a href="https://www.google.es/">+
+            </div>
+
+            <div class="passwordConfirm-container">
+                <input class='passwordConfirm' type="password" id="password2" placeholder="Confirmar contraseña"
+                    required>
+                <span class="locker-2">&#128272;</span>
+            </div>
+
+            <input type="text" name="prefix" value="+34 (España)" placeholder="(España)" disabled>
+
+            <input type="number" name="phone" placeholder="Número de teléfono" required>
+
+            <div class="confirm-container">
+                <input id=confirm type="checkbox" name="confirm" required>
+                <label for="confirm">Acepto la política de privacidad y publicidad <a href="https://www.google.es/">+
                         info</a></label><br>
             </div>
 
-            <input type="submit" id="submit" value="Registrarse">
+            <input id="submit" type="submit" value="Registrarse" class="submit" disabled>
 
         </form>
 
