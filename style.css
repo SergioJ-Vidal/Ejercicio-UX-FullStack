@@ -44,6 +44,7 @@ header {
 input {
     width: 343px;
     height: 56px;
+    border-radius: 7px;
 }
 
 #agreement {
@@ -57,4 +58,8 @@ input::-webkit-input-placeholder{
 
 input:focus::-webkit-input-placeholder{
 position: absolute;
+}
+
+#country-label {
+
 }
