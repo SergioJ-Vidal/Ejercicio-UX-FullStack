@@ -27,7 +27,7 @@ form {
   flex-direction: column;
   gap: 1em;
   align-items: center;
-  width: 375px;
+  max-width: 375px;
 }
 
 .topic {
@@ -71,11 +71,13 @@ header {
 }
 
 input {
+    font-family: raleway;
     width: 343px;
     height: 56px;
     border-radius: 8px;
     border: 1px solid #BDBDBD;
     background-color: #F2F2F2;
+    padding-left: 10px;
 }
 
 #agreement {
@@ -85,6 +87,7 @@ input {
 
 input::-webkit-input-placeholder {
     position: relative;
+    font-size: 12px;
 }
 
 input:focus::-webkit-input-placeholder {
@@ -158,4 +161,8 @@ input:focus::-webkit-input-placeholder {
 
 .country-container span {
     z-index: -1;
+}
+
+.agreement label {
+    font-size: 12px;
 }

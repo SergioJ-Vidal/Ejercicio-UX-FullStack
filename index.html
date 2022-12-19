@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <header id="header">
         <div class="top-header"><img src="/assets/Vector.png"></div>
         <div class="bottom-header">
@@ -21,32 +22,49 @@
             <img src="/assets/reorder.png">
         </div>
     </header>
+
     <main id="main">
+
         <div id='modal-countries' class="modal hide">
         </div>
+
         <form>
+
             <h1 class="topic">Crea tu cuenta CareSwitch</h1>
+
             <input type="text" id="name" placeholder="Nombre" required>
+
             <input type="text" id="surname" placeholder="Apellidos" required>
 
-            <p class="country-region-header">COUNTRY OR REGION</p>
-            <label for="country">Choose a country</label>
+            <p class="country-region-header">PAIS O REGIÓN</p>
+
             <div class="country-container">
                 <input id='select-country' type="text" name="country" placeholder="Spain">
             </div>
 
-            </select>
+            <input type="email" name="email" placeholder="Email" pattern=^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$
+                title='Email doesn´t have a correct format' required>
+
             <input type="password" id="password" placeholder="Contraseña" required>
-            <input type="password" id="password2" placeholder="Repite la contraseña" required>
+
+            <input type="password" id="password2" placeholder="Confirmar contraseña" required>
+
             <input type="text" id="prefix" value="+34 (España)" placeholder="(España)" disabled>
-            <input type="phone" id="phone" required>
+
+            <input type="phone" id="phone" placeholder="Número de teléfono" required>
+
             <div class="agreement" required>
                 <input type="checkbox" id="agreement" name="agreement" value="agreed">
-                <label for="agreement">Acepto la política de privacidad y publicidad</label><br>
+                <label for="agreement">Acepto la política de privacidad y publicidad<a href="https://www.google.es/">+
+                    info</a></label><br>
             </div>
+
             <input type="submit" id="submit" value="Registrarse">
+
         </form>
+
     </main>
+
     <script src="/index.js" type="module"></script>
 </body>
 
