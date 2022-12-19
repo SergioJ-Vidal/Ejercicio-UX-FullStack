@@ -1,0 +1,21 @@
+html {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    width: 375px;
+    height: 812px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    gap: 1em;
+    border: solid black;
+    border-radius: 8px;
+    padding: 1em;
+}
