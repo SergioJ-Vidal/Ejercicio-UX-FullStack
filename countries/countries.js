@@ -1,1 +1,9 @@
-export const countries = ['Spain','Denmark','England','France','Germany','Italy'];
+export const countries = [
+  "Australia",
+  "Estados Unidos",
+  "Guinea",
+  "Letonia",
+  "España",
+  "Portugal",
+  "Francia",
+];
