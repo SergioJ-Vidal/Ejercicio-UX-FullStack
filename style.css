@@ -182,8 +182,8 @@ input:focus::-webkit-input-placeholder {
 
 input:focus {
   outline: none;
-  border: 2px solid #5d5fef;
-  box-shadow: 0 0 5px #a5a6f6;
+  border: 2px solid var(--color1);
+  box-shadow: 0 0 5px var(--color5);
 }
 
 input[name="name"]::-webkit-input-placeholder {
@@ -323,7 +323,7 @@ input[name="password"]:focus::-webkit-input-placeholder {
 .password:focus {
   outline: none;
   border: 2px solid var(--color1);
-  box-shadow: 0 0 10px var(---color3);
+  box-shadow: 0 0 10px var(---color5);
   flex: 1;
 }
 
@@ -425,7 +425,7 @@ input[name="passwordConfirm"]:focus::-webkit-input-placeholder {
 .passwordConfirm-container :nth-child(2) {
   display: flex;
   align-items: center;
-  height: 100%;
+  
   cursor: pointer;
 }
 
@@ -451,17 +451,20 @@ input::-webkit-inner-spin-button {
 }
 
 .confirm-container {
-  display: flex;
- 
+  display: flex; 
   align-items: center;
   gap: 0.8rem;
   width: 343px;
   font-weight: 700;
 }
 
-.confirm label {
-  font-size: 7px;
-}
+.confirm-container input {
+    height: 20px;
+    width: 20px;
+    
+  }
+
+
 
 #confirm {
   width: 1.2rem;
