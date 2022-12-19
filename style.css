@@ -1,60 +1,74 @@
+:root {
+  --color1: #5d5fef;
+  --color2: #cccdf9;
+  --color3: #f2f2f2;
+  --color4: #bdbdbd;
+}
+
 html {
-    margin: 0px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  font-family: Raleway;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 375px;
+  box-sizing: border-box;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    border: solid black;
-    border-radius: 8px;
-    align-items: center;
-    padding: 1em;;
+  background-color: var(--color3);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  width: 375px;
 }
 
 .topic {
-    color: #5D5FEF;
-    width: 303px;
-    height: 37px;
-    left: 36px;
-    top: 120px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 24px;
+  color: var(--color1);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
 }
 
 header {
-    background-color: #5D5FEF;
-    width: fit-content;
-    padding: 1em;
+  background-color: var(--color1);
+  width: 375px;
+  height: 104px;
+}
+.top-header {
+  background-color: red;
+}
+.bottom-header {
+  background-color: green;
+}
+
+.logo {
+  width: 47px;
 }
 
 input {
-    width: 343px;
-    height: 56px;
+  width: 343px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #BDBDBD;
+  background: #F2F2F2;
 }
 
 #agreement {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
-input::-webkit-input-placeholder{
-    position: relative;
+input::-webkit-input-placeholder {
+  position: relative;
 }
 
-input:focus::-webkit-input-placeholder{
-position: absolute;
+input:focus::-webkit-input-placeholder {
+  position: absolute;
 }
