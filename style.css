@@ -6,6 +6,8 @@
   --color5: #a5a6f6;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Bebas+Neue&display=swap');
+
 html {
   display: flex;
   justify-content: center;
@@ -461,11 +463,18 @@ input::-webkit-inner-spin-button {
 .confirm-container input {
     height: 20px;
     width: 20px;
-    
   }
-
-
 
 #confirm {
   width: 1.2rem;
+}
+
+input::placeholder {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1em;
+}
+
+p.country-region-header {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1em;
 }
