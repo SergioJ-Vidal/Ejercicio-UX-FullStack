@@ -1,0 +1,1 @@
+export const countries = ['Spain','Denmark','England','France','Germany','Italy'];

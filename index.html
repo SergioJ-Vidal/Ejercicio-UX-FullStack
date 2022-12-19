@@ -21,33 +21,33 @@
             <img src="/assets/reorder.png">
         </div>
     </header>
-
-    <form>
-        <h1 class="topic">Crea tu cuenta CareSwitch</h1>
-        <input type="text" id="name" placeholder="Nombre" required>
-        <input type="text" id="surname" placeholder="Apellidos" required>
-        <label id="contry-label"  for="country">País o Región</label>
-        <select id="country" name="country">
-
-            <option value="australia">Australia</option>
-            <option value="estadosunidos">Estados Unidos</option>
-            <option value="guinea">Guinea</option>
-            <option value="letonia">Letonia</option>
-            <option value="españa">España</option>
-            <option value="portugal">Portugal</option>
-            <option value="francia">Francia</option>
-
-        </select>
-        <input type="password" id="password" placeholder="Contraseña" required>
-        <input type="password" id="password2" placeholder="Repite la contraseña" required>
-        <input type="text" id="prefix" value="+34 (España)" placeholder="(España)" disabled>
-        <input type="phone" id="phone" required>
-        <div class="agreement" required>
-            <input type="checkbox" id="agreement" name="agreement" value="agreed">
-            <label for="agreement">Acepto la política de privacidad y publicidad</label><br>
+    <main id="main">
+        <div id='modal-countries' class="modal hide">
         </div>
-        <input type="submit" id="submit" value="Registrarse">
-    </form>
+        <form>
+            <h1 class="topic">Crea tu cuenta CareSwitch</h1>
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="text" id="surname" placeholder="Apellidos" required>
+
+            <p class="country-region-header">COUNTRY OR REGION</p>
+            <label for="country">Choose a country</label>
+            <div class="country-container">
+                <input id='select-country' type="text" name="country" placeholder="Spain">
+            </div>
+
+            </select>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <input type="password" id="password2" placeholder="Repite la contraseña" required>
+            <input type="text" id="prefix" value="+34 (España)" placeholder="(España)" disabled>
+            <input type="phone" id="phone" required>
+            <div class="agreement" required>
+                <input type="checkbox" id="agreement" name="agreement" value="agreed">
+                <label for="agreement">Acepto la política de privacidad y publicidad</label><br>
+            </div>
+            <input type="submit" id="submit" value="Registrarse">
+        </form>
+    </main>
+    <script src="/index.js" type="module"></script>
 </body>
 
 </html>
