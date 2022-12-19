@@ -3,6 +3,8 @@
   --color2: #cccdf9;
   --color3: #f2f2f2;
   --color4: #bdbdbd;
+  --color5: #CCCDF9;
+
 }
 
 html {
@@ -57,7 +59,7 @@ input {
   height: 56px;
   border-radius: 8px;
   border: 1px solid #BDBDBD;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 #agreement {
@@ -75,4 +77,8 @@ position: absolute;
 
 #country-label {
 
+}
+
+#submit {
+    background-color: var(--color5);
 }
