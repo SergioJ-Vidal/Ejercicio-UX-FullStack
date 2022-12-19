@@ -163,18 +163,342 @@ input:focus::-webkit-input-placeholder {
   z-index: -1;
 }
 
+/* ////// */
+
+.form {
+  display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 70%;
+  margin: auto;
+}
+
+.form input {
+  position: relative;
+  min-height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border-width: thin;
+  border: 1px solid grey;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid purple;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+input[name="name"]::-webkit-input-placeholder {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+input[name="name"]:focus::-webkit-input-placeholder {
+  position: absolute;
+  font-size: small;
+  padding: 0;
+}
+
+input[name="surname"]::-webkit-input-placeholder {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+input[name="surname"]:focus::-webkit-input-placeholder {
+  position: absolute;
+  font-size: small;
+  padding: 0;
+}
+
+.country-region-header {
+  text-align: start;
+  font-size: large;
+}
+
+input[name="email"]::-webkit-input-placeholder {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+input[name="email"]:focus::-webkit-input-placeholder {
+  position: absolute;
+  font-size: small;
+  padding: 0;
+}
+.country-container {
+  position: relative;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.country-container :first-child {
+  position: relative;
+  border: none;
+  height: 1rem;
+  bottom: 7px;
+  padding: 0.5rem;
+  z-index: -1;
+}
+
+.country-container :nth-child(2) {
+  position: absolute;
+  right: 15px;
+  top: 4px;
+  font-size: x-large;
+}
+
+.country-container span {
+  z-index: -1;
+}
+
+input[name="email"]::-webkit-input-placeholder {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  transition: 0.3s ease;
+}
+input[name="email"]:focus::-webkit-input-placeholder {
+  position: absolute;
+  font-size: small;
+  padding: 0;
+}
+
+.submit {
+  background-color: #326273;
+  color: white;
+}
+
+.submit[disabled] {
+  border: 1px solid #999999;
+  background-color: #326273c0;
+  color: #666666;
+}
+
+.none {
+  display: none;
+}
+
+.contact-form-error {
+  margin-top: -1rem;
+  font-size: medium;
+  color: red;
+}
+
+.contact-form-error.is-active {
+  display: block;
+  padding: 0.3rem;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.contact-form-error.is-active::before {
+  content: "! ";
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+input[name="password"]::-webkit-input-placeholder {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+input[name="password"]:focus::-webkit-input-placeholder {
+  position: absolute;
+  font-size: small;
+  padding: 0;
+}
+
+.password-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.password-container :first-child {
+  flex: 1;
+  border: none;
+  /* width: 14rem; */
+  z-index: 1;
+}
+
+.password:focus {
+  outline: none;
+  border: 2px solid purple;
+  box-shadow: 0 0 10px #9ecaed;
+  flex: 1;
+}
+
+.password:focus ~ .locker {
+  outline: none;
+  position: absolute;
+  z-index: 1;
+  right: 0%;
+}
+
+.password-container :nth-child(3) {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* width: 2rem; */
+  font-size: medium;
+  cursor: pointer;
+}
+
+.password-strength-container.active {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.password-strength-container :first-child {
+  text-align: start;
+  margin: 0;
+  color: black;
+  font-size: medium;
+}
+
+.password-strength-container span {
+  color: grey;
+}
+
+.password-strength-container.none {
+  display: none;
+}
+
+#check-1 {
+  color: green;
+}
+
+#check-2 {
+  color: green;
+}
+
+#check-3 {
+  color: green;
+}
+
+.password-strength-container :nth-child(5) {
+  text-align: start;
+  margin: 0;
+  color: black;
+  font-size: medium;
+}
+
+.bar-progress {
+  height: 0.5rem;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+input[name="passwordConfirm"]::-webkit-input-placeholder {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+input[name="passwordConfirm"]:focus::-webkit-input-placeholder {
+  position: absolute;
+  font-size: small;
+  padding: 0;
+}
+
+.passwordConfirm-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.passwordConfirm-container :first-child {
+  flex: 1;
+  border: none;
+  /* width: 14rem; */
+  z-index: 1;
+}
+
+.passwordConfirm:focus {
+  outline: none;
+  border: 2px solid purple;
+  box-shadow: 0 0 10px #9ecaed;
+  flex: 1;
+}
+
+.passwordConfirm:focus ~ .locker-2 {
+  outline: none;
+  position: absolute;
+  z-index: 1;
+  right: 0%;
+}
+
+.passwordConfirm-container :nth-child(2) {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 2rem;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.password-message-check-wrong {
+  color: red;
+}
+
+input[name="prefix"] {
+  font-size: 1.3rem;
+}
+
+input[name="phone"]::-webkit-input-placeholder {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+input[name="phone"]:focus::-webkit-input-placeholder {
+  position: absolute;
+  font-size: small;
+  padding: 0;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .confirm-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 0.8rem;
 }
 
-.confirm-container label {
-  font-size: 12px;
-  margin-left: 5px;
-  font-weight: 700;
+#confirm {
+  width: 1.2rem;
 }
 
-.confirm-container input {
-    height: 10px;
-  }
+
+
+
