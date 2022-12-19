@@ -46,7 +46,7 @@
                 title='Introduce una dirección de correo electrónico valida para tu cuenta de CareSwitch' required>
 
             <div class="password-container">
-                <input type="password" id="password" placeholder="Contraseña" required>
+                <input class='password' type="password" name="password" placeholder="Contraseña" required>
 
             </div>
 
@@ -78,10 +78,12 @@
 
                 <input id=confirm type="checkbox" name="confirm" required>
 
-                <label for="confirm">Acepto la política de privacidad y publicidad <a href="https://www.google.es/">+ info</a></label>
+                <label for="confirm">Acepto la política de privacidad y publicidad <a href="https://www.google.es/">+
+                        info</a></label>
             </div>
 
-            <input id="submit" type="submit" value="Registrarse" class="submit" disabled>
+
+            <input onClick="location.href='register.html'" id="submit" type="submit" value="Registrarse" class="submit">
 
         </form>
 

@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid rgb(215, 215, 215);
 }
 
 form {
@@ -101,6 +102,13 @@ input:focus::-webkit-input-placeholder {
 
 #submit {
   background-color: var(--color5);
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#submit:hover {
+  background-color: var(--color1);
 }
 
 .modal {
@@ -154,10 +162,6 @@ input:focus::-webkit-input-placeholder {
   position: absolute;
   right: 15px;
   top: 4px;
-}
-
-.country-container span {
-  /* z-index: -1; */
 }
 
 /* ////// */
@@ -242,10 +246,6 @@ input[name="email"]:focus::-webkit-input-placeholder {
   top: 4px;
 }
 
-.country-container span {
-  /* z-index: -1; */
-}
-
 input[name="email"]::-webkit-input-placeholder {
   position: relative;
   padding: 0.5rem;
@@ -254,17 +254,6 @@ input[name="email"]::-webkit-input-placeholder {
 input[name="email"]:focus::-webkit-input-placeholder {
   position: absolute;
   padding: 0;
-}
-
-.submit {
-  background-color: #326273;
-  color: white;
-}
-
-.submit[disabled] {
-  border: 1px solid #999999;
-  background-color: #326273c0;
-  color: #666666;
 }
 
 .none {
@@ -425,15 +414,12 @@ input[name="passwordConfirm"]:focus::-webkit-input-placeholder {
 .passwordConfirm-container :nth-child(2) {
   display: flex;
   align-items: center;
-  
+
   cursor: pointer;
 }
 
 .password-message-check-wrong {
   color: red;
-}
-
-input[name="prefix"] {
 }
 
 input[name="phone"]::-webkit-input-placeholder {
@@ -451,21 +437,39 @@ input::-webkit-inner-spin-button {
 }
 
 .confirm-container {
-  display: flex; 
+  display: flex;
   align-items: center;
   gap: 0.8rem;
   width: 343px;
   font-weight: 700;
+  font-size: 12px;
 }
 
 .confirm-container input {
-    height: 20px;
-    width: 20px;
-    
-  }
-
-
+  height: 20px;
+  width: 20px;
+}
 
 #confirm {
   width: 1.2rem;
 }
+
+.register {
+  width: 375px;
+  height: 708px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register-message img {
+  height: 200px;
+  width: fit-content;
+  margin-top: 120px;
+}
+
+.register input {
+    margin-bottom: 20px;
+  }
