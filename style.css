@@ -137,8 +137,6 @@ input:focus::-webkit-input-placeholder {
 
 .country-container {
   position: relative;
-  height: 3rem;
-  font-size: 1rem;
   border-radius: 10px;
   border: 1px solid grey;
 }
@@ -149,18 +147,17 @@ input:focus::-webkit-input-placeholder {
   height: 1rem;
   bottom: 7px;
   padding: 0.5rem;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .country-container :nth-child(2) {
   position: absolute;
   right: 15px;
   top: 4px;
-  font-size: x-large;
 }
 
 .country-container span {
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 /* ////// */
@@ -178,7 +175,6 @@ input:focus::-webkit-input-placeholder {
 .form input {
   position: relative;
   min-height: 3rem;
-  font-size: 1.2rem;
   border-radius: 10px;
   border-width: thin;
   border: 1px solid grey;
@@ -186,55 +182,47 @@ input:focus::-webkit-input-placeholder {
 
 input:focus {
   outline: none;
-  border: 2px solid purple;
-  box-shadow: 0 0 10px #9ecaed;
+  border: 2px solid #5d5fef;
+  box-shadow: 0 0 5px #a5a6f6;
 }
 
 input[name="name"]::-webkit-input-placeholder {
   position: relative;
-  font-size: 1.3rem;
   padding: 0.5rem;
   transition: 0.3s ease-in-out;
 }
 input[name="name"]:focus::-webkit-input-placeholder {
   position: absolute;
-  font-size: small;
   padding: 0;
 }
 
 input[name="surname"]::-webkit-input-placeholder {
   position: relative;
-  font-size: 1.3rem;
   padding: 0.5rem;
   transition: 0.3s ease-in-out;
 }
 
 input[name="surname"]:focus::-webkit-input-placeholder {
   position: absolute;
-  font-size: small;
   padding: 0;
 }
 
 .country-region-header {
   text-align: start;
-  font-size: large;
 }
 
 input[name="email"]::-webkit-input-placeholder {
   position: relative;
-  font-size: 1.3rem;
   padding: 0.5rem;
   transition: 0.3s ease-in-out;
 }
 input[name="email"]:focus::-webkit-input-placeholder {
   position: absolute;
-  font-size: small;
   padding: 0;
 }
 .country-container {
   position: relative;
   height: 3rem;
-  font-size: 1rem;
   border-radius: 10px;
   border: 1px solid grey;
 }
@@ -245,29 +233,26 @@ input[name="email"]:focus::-webkit-input-placeholder {
   height: 1rem;
   bottom: 7px;
   padding: 0.5rem;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .country-container :nth-child(2) {
   position: absolute;
   right: 15px;
   top: 4px;
-  font-size: x-large;
 }
 
 .country-container span {
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 input[name="email"]::-webkit-input-placeholder {
   position: relative;
-  font-size: 1.3rem;
   padding: 0.5rem;
   transition: 0.3s ease;
 }
 input[name="email"]:focus::-webkit-input-placeholder {
   position: absolute;
-  font-size: small;
   padding: 0;
 }
 
@@ -288,7 +273,6 @@ input[name="email"]:focus::-webkit-input-placeholder {
 
 .contact-form-error {
   margin-top: -1rem;
-  font-size: medium;
   color: red;
 }
 
@@ -315,45 +299,38 @@ input[name="email"]:focus::-webkit-input-placeholder {
 
 input[name="password"]::-webkit-input-placeholder {
   position: relative;
-  font-size: 1.3rem;
   padding: 0.5rem;
   transition: 0.3s ease-in-out;
 }
 input[name="password"]:focus::-webkit-input-placeholder {
   position: absolute;
-  font-size: small;
   padding: 0;
 }
 
 .password-container {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: space-between;
-  height: 3.1rem;
-  font-size: 1rem;
   border-radius: 10px;
-  border: 1px solid grey;
 }
 
 .password-container :first-child {
   flex: 1;
-  border: none;
-  /* width: 14rem; */
-  z-index: 1;
+  /* border: none; */
+  /* z-index: 1; */
 }
 
 .password:focus {
   outline: none;
-  border: 2px solid purple;
-  box-shadow: 0 0 10px #9ecaed;
+  border: 2px solid var(--color1);
+  box-shadow: 0 0 10px var(---color3);
   flex: 1;
 }
 
 .password:focus ~ .locker {
   outline: none;
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   right: 0%;
 }
 
@@ -361,8 +338,6 @@ input[name="password"]:focus::-webkit-input-placeholder {
   display: flex;
   align-items: center;
   height: 100%;
-  /* width: 2rem; */
-  font-size: medium;
   cursor: pointer;
 }
 
@@ -376,7 +351,6 @@ input[name="password"]:focus::-webkit-input-placeholder {
   text-align: start;
   margin: 0;
   color: black;
-  font-size: medium;
 }
 
 .password-strength-container span {
@@ -403,7 +377,6 @@ input[name="password"]:focus::-webkit-input-placeholder {
   text-align: start;
   margin: 0;
   color: black;
-  font-size: medium;
 }
 
 .bar-progress {
@@ -414,13 +387,11 @@ input[name="password"]:focus::-webkit-input-placeholder {
 
 input[name="passwordConfirm"]::-webkit-input-placeholder {
   position: relative;
-  font-size: 1.3rem;
   padding: 0.5rem;
   transition: 0.3s ease-in-out;
 }
 input[name="passwordConfirm"]:focus::-webkit-input-placeholder {
   position: absolute;
-  font-size: small;
   padding: 0;
 }
 
@@ -429,30 +400,25 @@ input[name="passwordConfirm"]:focus::-webkit-input-placeholder {
   position: relative;
   align-items: center;
   justify-content: space-between;
-  height: 3.2rem;
-  font-size: 1rem;
   border-radius: 10px;
-  border: 1px solid grey;
 }
 
 .passwordConfirm-container :first-child {
   flex: 1;
-  border: none;
-  /* width: 14rem; */
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .passwordConfirm:focus {
   outline: none;
-  border: 2px solid purple;
-  box-shadow: 0 0 10px #9ecaed;
+  border: 2px solid var(--color1);
+  box-shadow: 0 0 10px var(--color5);
   flex: 1;
 }
 
 .passwordConfirm:focus ~ .locker-2 {
   outline: none;
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   right: 0%;
 }
 
@@ -460,8 +426,6 @@ input[name="passwordConfirm"]:focus::-webkit-input-placeholder {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 2rem;
-  font-size: medium;
   cursor: pointer;
 }
 
@@ -470,18 +434,15 @@ input[name="passwordConfirm"]:focus::-webkit-input-placeholder {
 }
 
 input[name="prefix"] {
-  font-size: 1.3rem;
 }
 
 input[name="phone"]::-webkit-input-placeholder {
   position: relative;
-  font-size: 1.3rem;
   padding: 0.5rem;
   transition: 0.3s ease-in-out;
 }
 input[name="phone"]:focus::-webkit-input-placeholder {
   position: absolute;
-  font-size: small;
   padding: 0;
 }
 input::-webkit-inner-spin-button {
@@ -491,14 +452,17 @@ input::-webkit-inner-spin-button {
 
 .confirm-container {
   display: flex;
+ 
   align-items: center;
   gap: 0.8rem;
+  width: 343px;
+  font-weight: 700;
+}
+
+.confirm label {
+  font-size: 7px;
 }
 
 #confirm {
   width: 1.2rem;
 }
-
-
-
-
