@@ -16,8 +16,8 @@
 
     <form>
         <h1 class="topic">Crea tu cuenta CareSwitch</h1>
-        <input type="text" id="name" placeholder="Nombre">
-        <input type="text" id="surname" placeholder="Apellidos">
+        <input type="text" id="name" placeholder="Nombre" required>
+        <input type="text" id="surname" placeholder="Apellidos" required>
         <label for="country">País o Región</label>
         <select id="country" name="country">
 
@@ -30,11 +30,11 @@
             <option value="francia">Francia</option>
 
         </select>
-        <input type="password" id="password" placeholder="Contraseña">
-        <input type="password" id="password2" placeholder="Repite la contraseña">
-        <input type="text" id="prefix" value="+34" placeholder="(España)">
-        <input type="phone" id="phone">
-        <div class="agreement">
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <input type="password" id="password2" placeholder="Repite la contraseña" required>
+        <input type="text" id="prefix" value="+34 (España)" placeholder="(España)" disabled>
+        <input type="phone" id="phone" required>
+        <div class="agreement" required>
             <input type="checkbox" id="agreement" name="agreement" value="agreed">
             <label for="agreement"> Acepto la política de privacidad y publicidad</label><br>
         </div>

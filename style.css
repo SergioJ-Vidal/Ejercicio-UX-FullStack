@@ -15,11 +15,11 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    max-width: 60vw;
     gap: 1em;
     border: solid black;
     border-radius: 8px;
-    padding: 1em;
+    align-items: center;
+    padding: 1em;;
 }
 
 .topic {
@@ -37,4 +37,24 @@ form {
 
 header {
     background-color: #5D5FEF;
+    width: fit-content;
+    padding: 1em;
+}
+
+input {
+    width: 343px;
+    height: 56px;
+}
+
+#agreement {
+    width: 24px;
+    height: 24px;
+}
+
+input::-webkit-input-placeholder{
+    position: relative;
+}
+
+input:focus::-webkit-input-placeholder{
+position: absolute;
 }
