@@ -69,6 +69,10 @@ input::-webkit-input-placeholder {
   position: relative;
 }
 
-input:focus::-webkit-input-placeholder {
-  position: absolute;
+input:focus::-webkit-input-placeholder{
+position: absolute;
+}
+
+#country-label {
+
 }
